@@ -1,11 +1,51 @@
-# TensorFlow Models
+# tensorflow-image-classifier
+<img src="https://github.com/koflerm/tensorflow-image-classifier/blob/master/image.png?raw=true" />
+<br/>
+Described here at the bottom half:<br/>
+https://medium.com/@m_ko/deep-learning-with-tensorflow-part-2-image-classification-58fcdffa7b84
+<br/><br/>
+A generic image classifier program using Tensorflow (https://www.tensorflow.org/) and the pre-trained Deep Learning Convolutional Neural Network model called Inception (https://research.googleblog.com/2016/03/train-your-own-image-classifier-with.html).
 
-This repository contains a number of different models implemented in [TensorFlow](https://www.tensorflow.org):
+This model has been pre-trained for the  ImageNet (http://image-net.org/) data, it can differentiate between 1,000 different classes
+The program applies Transfer Learning to this existing model and re-trains it to classify a new set of images.
 
-The [official models](official) are a collection of example models that use TensorFlow's high-level APIs. They are intended to be well-maintained, tested, and kept up to date with the latest stable TensorFlow API. They should also be reasonably optimized for fast performance while still being easy to read. We especially recommend newer TensorFlow users to start here.
+This is a generic setup and can be used to classify almost any kind of image. 
 
-The [research models](research) are a large collection of models implemented in TensorFlow by researchers. It is up to the individual researchers to maintain the models and/or provide support on issues and pull requests.
+## Installation
+Make sure you have Python (https://www.python.org/) installed, then install Tensorflow (https://www.tensorflow.org/install/) on your system, and clone this repo.
 
-The [samples folder](samples) contains code snippets and smaller models that demonstrate features of TensorFlow, including code presented in various blog posts.
+<br/>
 
-The [tutorials folder](tutorials) is a collection of models described in the [TensorFlow tutorials](https://www.tensorflow.org/tutorials/).
+## Usage
+
+The usage is described in this article at the bottom half, simply follow the steps:<br/>
+https://medium.com/@m_ko/deep-learning-with-tensorflow-part-2-image-classification-58fcdffa7b84
+<br/>
+
+If you wanted to use a video as input and look at it frame-by-frame, check out this repository:
+https://github.com/koflerm/tensorflow-video-classifier
+
+</br>
+## License
+MIT License
+
+Copyright (c) 2017 Matteo Kofler
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
