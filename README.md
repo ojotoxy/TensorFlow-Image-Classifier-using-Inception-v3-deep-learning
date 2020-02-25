@@ -1,3 +1,14 @@
+# Train
+
+```bash
+sudo ./dev_docker_run ./train.py
+```
+
+Quick train for testing:
+```bash
+sudo ./dev_docker_run ./train.py --how_many_training_steps 10
+```
+
 # tensorflow-image-classifier
 <img src="https://github.com/koflerm/tensorflow-image-classifier/blob/master/image.png?raw=true" />
 <br/>
