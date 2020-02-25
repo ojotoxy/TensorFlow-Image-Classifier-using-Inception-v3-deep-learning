@@ -939,12 +939,18 @@ def main(_):
           print('%70s  %s' % (test_filename,
                               list(image_lists.keys())[predictions[i]]))
 
+        
+    print('writing checkpoint...')
+    saver = tf.train.Saver()
+    
+    saver.save(sess, FLAGS.output_graph.replace('pb', 'ckpt'))
     # Write out the trained graph and labels with the weights stored as
     # constants.
-    output_graph_def = graph_util.convert_variables_to_constants(
-        sess, graph.as_graph_def(), [FLAGS.final_tensor_name])
-    with gfile.FastGFile(FLAGS.output_graph, 'wb') as f:
-      f.write(output_graph_def.SerializeToString())
+#     output_graph_def = graph_util.convert_variables_to_constants(
+#         sess, graph.as_graph_def(), [FLAGS.final_tensor_name])
+#     with gfile.FastGFile(FLAGS.output_graph, 'wb') as f:
+#       f.write(output_graph_def.SerializeToString())
+    
     with gfile.FastGFile(FLAGS.output_labels, 'w') as f:
       f.write('\n'.join(image_lists.keys()) + '\n')
 
